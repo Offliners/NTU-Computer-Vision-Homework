@@ -37,8 +37,8 @@ int main(int argc, char **argv)
     // diagonally flip
     Mat img3;
     transpose(img, img3);
-    imwrite("demo/diagonally flip.png", img3);
-    cout << "Downloaded diagonally flip image" << endl;
+    imwrite("demo/diagonally-flip.png", img3);
+    cout << "Downloaded diagonally-flip image" << endl;
 
 	return 0;
 }
