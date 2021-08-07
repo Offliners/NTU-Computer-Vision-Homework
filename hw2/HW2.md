@@ -1,6 +1,6 @@
 # Homework 2 - Basic Image Manipulation
 
-![Origin Iamge](https://github.com/Offliners/NTU_Computer_Vision/blob/main/hw2/data/lena.bmp)
+![Origin Iamge](data/lena.bmp)
 
 ### Usage
 ```

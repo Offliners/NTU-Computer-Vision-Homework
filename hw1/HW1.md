@@ -1,6 +1,6 @@
 # Homework 1 - Basic Image Manipulation
 ### Origin Iamge
-![Origin Iamge](https://github.com/Offliners/NTU_Computer_Vision/blob/main/hw1/data/lena.bmp)
+![Origin Iamge](data/lena.bmp)
 
 ### Usage
 ```
@@ -19,27 +19,27 @@ Write a program to do the following requirement.
 
 (a) upside-down lena.bmp
 
-![upside-down](https://github.com/Offliners/NTU_Computer_Vision/blob/main/hw1/demo/upside-down.png)
+![upside-down](demo/upside-down.png)
     
 (b) right-side-left lena.bmp
 
-![right-side-left](https://github.com/Offliners/NTU_Computer_Vision/blob/main/hw1/demo/right-side-left.png)
+![right-side-left](demo/right-side-left.png)
     
 (c) diagonally flip lena.bmp
 
-![diagonally-flip](https://github.com/Offliners/NTU_Computer_Vision/blob/main/hw1/demo/diagonally-flip.png)
+![diagonally-flip](demo/diagonally-flip.png)
 
 ### Part 2 
 Write a program or use software to do the following requirement.
     
 (d) rotate lena.bmp 45 degrees clockwise
 
-![rotate-45](https://github.com/Offliners/NTU_Computer_Vision/blob/main/hw1/demo/rotate-45.png)
+![rotate-45](demo/rotate-45.png)
 
 (e) shrink lena.bmp in half
 
-![shrink](https://github.com/Offliners/NTU_Computer_Vision/blob/main/hw1/demo/shrink.png)
+![shrink](demo/shrink.png)
 
 (f) binarize lena.bmp at 128 to get a binary image
 
-![binarize](https://github.com/Offliners/NTU_Computer_Vision/blob/main/hw1/demo/binarize.png)
+![binarize](demo/binarize.png)
