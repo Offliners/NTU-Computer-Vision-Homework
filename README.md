@@ -2,7 +2,7 @@
 Homeworks of NTU Computer Vision
 
 ## Homeworks
-|[Homework 1](hw1/HW1.md)|Homework 2|Homework 3|
+|[Homework 1](hw1/HW1.md)|[Homework 2](hw2/HW2.md)|Homework 3|
 |-|-|-|
 |![hw1](https://github.com/Offliners/NTU_Computer_Vision/blob/main/img/hw1.png)|![hw2](https://github.com/Offliners/NTU_Computer_Vision/blob/main/img/hw2.png)|![hw3](https://github.com/Offliners/NTU_Computer_Vision/blob/main/img/hw3.gif)|
 |Homework 4|Homework 5|Homework 6|
