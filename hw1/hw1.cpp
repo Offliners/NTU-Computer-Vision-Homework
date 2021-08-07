@@ -8,29 +8,29 @@ using namespace cv;
 
 int main(int argc, char **argv)
 {
-	// read image 
-	Mat img = imread("lena.bmp", CV_8UC1);
+    if(argc != 2)
+    {
+        cout << "Error usage!" << endl;
+        return 1;
+    }
 
-	// sample code : Lomo Effect
-	int center_i = img.rows / 2;
-	int center_j = img.cols / 2;
-	double max_dist = sqrt(center_i*center_i + center_j*center_j);
+    string img_path = argv[1];
+    Mat img = imread(img_path, IMREAD_COLOR);
+    if(img.empty())
+    {
+        cout << "Could not read the image: " << img_path << endl;
+        return 1;
+    }
 
-	for (int i = 0; i < img.rows; i++) 
-		for (int j = 0; j < img.cols; j++)
-		{
-			double dx = i - center_i;
-			double dy = j - center_j;
-			double dist = sqrt(dx*dx + dy*dy) / max_dist;
-			img.at<uchar>(i, j) *= (1-dist)*(1 - dist);
-		}
-	
-	// show image
-	imshow("Lomo Effect", img);
+    // Original Image
+    namedWindow("Original Image", CV_WINDOW_AUTOSIZE);
+    imshow("Original Image", img);
 
-	// write image 
-	imwrite("lomoEffectLena.jpg", img);
+    Mat img2;
+    flip(img, img2, 0);
+    namedWindow("upside-down", CV_WINDOW_AUTOSIZE);
+    imwrite("demo/upside-down.png", img2);
+    cout << "Downloaded upside-down image" << endl;
 
-	waitKey(0);
 	return 0;
 }
