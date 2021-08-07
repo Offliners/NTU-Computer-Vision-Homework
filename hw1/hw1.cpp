@@ -15,7 +15,7 @@ int main(int argc, char **argv)
     }
 
     string img_path = argv[1];
-    Mat img = imread(img_path, IMREAD_COLOR);
+    Mat img = imread(img_path, IMREAD_GRAYSCALE);
     if(img.empty())
     {
         cout << "Could not read the image: " << img_path << endl;
