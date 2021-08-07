@@ -1,5 +1,4 @@
 #include<iostream>
-#include<cmath>
 #include<opencv2/core/core.hpp>
 #include<opencv2/highgui/highgui.hpp>
 #include<opencv2/imgproc/imgproc.hpp>
@@ -61,5 +60,5 @@ int main(int argc, char **argv)
     imwrite("demo/binarize.png", img6);
     cout << "Downloaded binarize image" << endl;
 
-	return 0;
+    return 0;
 }
