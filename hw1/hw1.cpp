@@ -22,15 +22,23 @@ int main(int argc, char **argv)
         return 1;
     }
 
-    // Original Image
-    namedWindow("Original Image", CV_WINDOW_AUTOSIZE);
-    imshow("Original Image", img);
-
-    Mat img2;
-    flip(img, img2, 0);
-    namedWindow("upside-down", CV_WINDOW_AUTOSIZE);
-    imwrite("demo/upside-down.png", img2);
+    // upside-down
+    Mat img1;
+    flip(img, img1, 0);
+    imwrite("demo/upside-down.png", img1);
     cout << "Downloaded upside-down image" << endl;
+
+    // right-side-left
+    Mat img2;
+    flip(img, img2, 1);
+    imwrite("demo/right-side-left.png", img2);
+    cout << "Downloaded right-side-left image" << endl;
+
+    // diagonally flip
+    Mat img3;
+    transpose(img, img3);
+    imwrite("demo/diagonally flip.png", img3);
+    cout << "Downloaded diagonally flip image" << endl;
 
 	return 0;
 }
