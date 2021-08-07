@@ -32,7 +32,13 @@ Write a program to do the following requirement.
 Write a program or use software to do the following requirement.
     
 (d) rotate lena.bmp 45 degrees clockwise
-    
+
+![rotate-45](https://github.com/Offliners/NTU_Computer_Vision/blob/main/hw1/demo/rotate-45.png)
+
 (e) shrink lena.bmp in half
-    
+
+![shrink](https://github.com/Offliners/NTU_Computer_Vision/blob/main/hw1/demo/shrink.png)
+
 (f) binarize lena.bmp at 128 to get a binary image
+
+![binarize](https://github.com/Offliners/NTU_Computer_Vision/blob/main/hw1/demo/binarize.png)
