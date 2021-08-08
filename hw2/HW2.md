@@ -25,3 +25,5 @@ Write a program to generate:
 ![histogram](demo/histogram.png)
 
 (c) connected components (regions with + at centroid, bounding box)
+
+![connected components](demo/connected-components.png)
