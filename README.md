@@ -1,6 +1,8 @@
 # NTU Computer Vision Homework
 Homeworks of NTU Computer Vision
 
+Course Website : [Link](http://cv2.csie.ntu.edu.tw/CV/)
+
 ## Outline
 |HW|Topic|
 |-|-|
@@ -26,5 +28,3 @@ Homeworks of NTU Computer Vision
 |Homework 10|-|-|
 |![hw10](img/hw10.gif)|-|-|
 
-## Reference
-* NTU Computer Vision I (922 U0610) : [Link](http://cv2.csie.ntu.edu.tw/CV/)
