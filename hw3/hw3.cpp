@@ -6,6 +6,8 @@
 using namespace std;
 using namespace cv;
 
+void calHistandDownload(Mat, string);
+
 int main(int argc, char **argv)
 {
     if(argc != 2)
@@ -22,57 +24,41 @@ int main(int argc, char **argv)
         return 1;
     }
 
-    imwrite("demo/origin.png", img);
-    cout << "Downloaded origin image" << endl;
+    // Origin
+    string origin = "origin";
+    calHistandDownload(img, origin);
 
-    // histogram
+    // divided by 3
+    Mat img1(img / 3.);
+    string divide_3 = "origin_divide_3";
+    calHistandDownload(img1, divide_3);
+
+    // histogram equalization
+    Mat img2(img.size(), CV_8UC1);
+    equalizeHist(img1, img2);
+    string histogram_equalization = "histogram_equalization";
+    calHistandDownload(img2, histogram_equalization);
+
+    return 0;
+}
+
+void calHistandDownload(Mat image, string file_name)
+{
+    imwrite("demo/" + file_name + ".png", image);
+    cout << "Downloaded " + file_name + " image" << endl;
+
     Mat hist;
     int histSize = 256;
     float range[] = {0, 255};
     const float* histRange = {range};
-    calcHist(&img, 1, 0, Mat(), hist, 1, &histSize, &histRange);
-    Mat img1(256, 256, CV_8UC1, Scalar(255));
+    calcHist(&image, 1, 0, Mat(), hist, 1, &histSize, &histRange);
+    Mat temp(256, 256, CV_8UC1, Scalar(255));
     float histmax = *max_element(hist.begin<float>(), hist.end<float>());
     for(int i = 0; i < 256; ++i)
     {
         int intensity = static_cast<int>(hist.at<float>(i) * 0.9 * 256 / histmax);
-        line(img1, Point(i, 255), Point(i, 255 - intensity), Scalar(0));
+        line(temp, Point(i, 255), Point(i, 255 - intensity), Scalar(0));
     }
-    imwrite("demo/histogram.png", img1);
-    cout << "Downloaded histogram image" << endl;
-
-    // divided by 3
-    Mat img2(img / 3.);
-    imwrite("demo/origin_divide_3.png", img2);
-    cout << "Downloaded origin_divide_3 image" << endl;
-
-    calcHist(&img2, 1, 0, Mat(), hist, 1, &histSize, &histRange);
-    Mat img3(256, 256, CV_8UC1, Scalar(255));
-    histmax = *max_element(hist.begin<float>(), hist.end<float>());
-    for(int i = 0; i < 256; ++i)
-    {
-        int intensity = static_cast<int>(hist.at<float>(i) * 0.9 * 256 / histmax);
-        line(img3, Point(i, 255), Point(i, 255 - intensity), Scalar(0));
-    }
-    imwrite("demo/histogram_divide_3.png", img3);
-    cout << "Downloaded histogram_divide_3 image" << endl;
-
-    // histogram equalization
-    Mat img4(img.size(), CV_8UC1);
-    equalizeHist(img2, img4);
-    imwrite("demo/histogram_equalization_image.png", img4);
-    cout << "Downloaded histogram_equalization_image image" << endl;
-
-    calcHist(&img4, 1, 0, Mat(), hist, 1, &histSize, &histRange);
-    Mat img5(256, 256, CV_8UC1, Scalar(255));
-    histmax = *max_element(hist.begin<float>(), hist.end<float>());
-    for(int i = 0; i < 256; ++i)
-    {
-        int intensity = static_cast<int>(hist.at<float>(i) * 0.9 * 256 / histmax);
-        line(img5, Point(i, 255), Point(i, 255 - intensity), Scalar(0));
-    }
-    imwrite("demo/histogram_equalization_histogram.png", img5);
-    cout << "Downloaded histogram_equalization_histogram image" << endl;
-
-    return 0;
+    imwrite("demo/" + file_name + "_histogram.png", temp);
+    cout << "Downloaded " + file_name + " histogram image" << endl;
 }

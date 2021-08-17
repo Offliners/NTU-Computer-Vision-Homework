@@ -20,16 +20,16 @@ Write a program to generate images and histograms:
 
 |Image|histogram|
 |-|-|
-|![origin](demo/origin.png)|![histogram](demo/histogram.png)|
+|![origin](demo/origin.png)|![histogram](demo/origin_histogram.png)|
 
 (b) image with intensity divided by 3 and its histogram
 
 |Image|histogram|
 |-|-|
-|![origin_divide_3](demo/origin_divide_3.png)|![histogram_divide_3](demo/histogram_divide_3.png)|
+|![origin_divide_3](demo/origin_divide_3.png)|![histogram_divide_3](demo/origin_divide_3_histogram.png)|
 
 (c) image after applying histogram equalization to (b) and its histogram
 
 |Image|histogram|
 |-|-|
-|![histogram_equalization_image](demo/histogram_equalization_image.png)|![histogram_equalization_histogram](demo/histogram_equalization_histogram.png)|
+|![histogram_equalization](demo/histogram_equalization.png)|![histogram_equalization_histogram](demo/histogram_equalization_histogram.png)|
