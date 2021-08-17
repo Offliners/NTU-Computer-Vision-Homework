@@ -9,6 +9,6 @@ find_package(OpenCV REQUIRED)
 include_directories(${OpenCV_INCLUDE_DIRS})
 
 add_executable(hw3 hw3.cpp)
-target_link_libraries(hw2 ${OpenCV_LIBS})
+target_link_libraries(hw3 ${OpenCV_LIBS})
 
 file(MAKE_DIRECTORY demo)

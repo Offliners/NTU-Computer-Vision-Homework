@@ -12,7 +12,7 @@ Course Website : [Link](http://cv2.csie.ntu.edu.tw/CV/)
 |-|-|
 |HW1|[Basic Image Manipulation](hw1/HW1.md)|
 |HW2|[Connecting Components](hw2/HW2.md)|
-|HW3|[Histogram Equalization]|
+|HW3|[Histogram Equalization](hw3/HW3.md)|
 |HW4|[Mathematical Morphology - Binary Morphology]|
 |HW5|[Mathematical Morphology - Gray Scale Morphology]|
 |HW6|[Yokoi Connectivity Number]|
@@ -22,7 +22,7 @@ Course Website : [Link](http://cv2.csie.ntu.edu.tw/CV/)
 |HW10|[Zero Crossing Edge Detection]|
 
 ## Homeworks
-|[Homework 1](hw1/HW1.md)|[Homework 2](hw2/HW2.md)|Homework 3|
+|[Homework 1](hw1/HW1.md)|[Homework 2](hw2/HW2.md)|[Homework 3](hw3/HW3.md)|
 |-|-|-|
 |![hw1](img/hw1.png)|![hw2](img/hw2.png)|![hw3](img/hw3.gif)|
 |Homework 4|Homework 5|Homework 6|
