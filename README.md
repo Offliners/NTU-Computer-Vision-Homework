@@ -1,6 +1,8 @@
 # NTU Computer Vision Homework
 Homeworks of NTU CSIE Computer Vision(922 U0610)
 
+`This repository is just for me to learn something in this lesson, so many of homeworks use OpenCV API instead of implementing it`
+
 Course Website : [Link](http://cv2.csie.ntu.edu.tw/CV/)
 
 ## 3rdparty
